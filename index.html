@@ -1,390 +1,527 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenhe Wang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile-section">
+                <img src="./assets/imgs/portrait.jpg" alt="Wenhe Wang" class="profile-pic">
+                <h1 class="heading">Wenhe Wang</h1>
+            </div>
+            <nav>
+                <a href="#about" class="nav-item" data-nav="aboutNavItem">About Me</a>
+                <a href="#projects" class="nav-item" data-nav="projectNavItem">Projects</a>
+                <a href="#posters" class="nav-item" data-nav="postersNavItem">Posters</a>
+                <a href="#certificates" class="nav-item" data-nav="certificatesNavItem">Certificates</a>
+                <a href="#education" class="nav-item" data-nav="educationNavItem">Education</a>
+            </nav>
+            <div class="social-icons">
+                <a href="mailto:wenhewangcrane@gmail.com" title="Email"><i class="far fa-envelope"></i></a>
+                <a href="https://github.com/Milkistasty" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/wenhe-wang/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div id="darkModeToggle" class="dark-mode-toggle">
+                <span id="toggleIcon">🌙</span>
+            </div>
+        </div>
+        <div class="right-column">
+            <section id="about" class="section" data-section="aboutNavItem">
+                <h2>Hello! &#128075;</h2>
+                <p>
+                <b>
+                    I'm Wenhe Wang, a Data Scientist with a Master's in Visual Computing from SFU. I specialize in computer vision, NLP, and cloud data solutions, and have experience developing models to optimize fraud detection, process image, enhance data pipelines, and automate text analysis.
+                </b>
+                </p>
 
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-    <title>Wenhe Wang | SFU MPCS in Visual Computing | Data Scientist at Cavallo Technologies</title>
-    <meta name="generator" content="Jekyll v3.9.0" />
-    <meta property="og:title" content="Wenhe Wang" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="description" content="SFU MPCS in Visual Computing | Data Scientist at Cavallo Technologies" />
-    <meta property="og:description" content="SFU MPCS in Visual Computing | Data Scientist at Cavallo Technologies" />
-    <link rel="canonical" href="https://Milkistasty.github.io" />
-    <meta property="og:url" content="https://Milkistasty.github.io" />
-    <meta property="og:site_name" content="Wenhe Wang" />
-    <!-- <meta name="twitter:card" content="summary" />
-    <meta property="twitter:title" content="Wenhe Wang" /> -->
-    <script type="application/ld+json">
-    {"description":"SFU MPCS in Visual Computing | Data Scientist at Cavallo Technologies","url":"https://Milkistasty.github.io/home/","@type":"WebSite","headline":"Wenhe Wang","name":"Wenhe Wang","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-    
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
-        <!-- Generated using https://favicon.io/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?">
-<link rel="manifest" href=site.webmanifest">
+                <p>My work spans sectors from FinTech, consulting to short video domains, including leading projects at Cavallo Technologies, TikTok, China Guangfa Bank, and KPMG.</p>
+                <p>I received my M.S. in Financial Engineering from University of Reading in 2019 and my B.Ec. in Financial Engineering from Nankai University in 2017.</p>
+            </section>
+            <section id="projects" class="section" data-section="projectNavItem">
+            
+            <div id="projects" class="section" section="projectNavItem">
+                <h2>Projects</h2>
+                <p>These are some selected personal and course projects that I have worked on, throughout my studies.</p>
+                
+                <div class="project-container">
+                    <div class="project-grid">
+                        <!-- Unity Cyberpunk Project -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/hologram.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Unity Cyberpunk Hologram and Teleport effects</h3>
+                                <p><b>Wenhe Wang</b> and Gouttham Nambirajam<br>
+                                <em>SFU Class Final Project, CMPT 766 - Computer Animation</em></p>
+                                <a href="https://drive.google.com/file/d/1JZXf-9xNkrojzsw_pUExbjAIIx6uAZZ7/view?usp=sharing">Final Effect,</a> <a href="https://docs.google.com/presentation/d/1wmeqJLUH5gBu10zW9S1dUVnSXDkdheku/edit?usp=sharing&ouid=117583969342236003405&rtpof=true&sd=true">Presentation Slides</a>
+                                <p>This is a from scratch re-implementation with Unity Shader script and Unity Rendering Pipeline to realise two 3D visual effects.</p>
+                            </div>
+                        </div>
 
+                        <!-- Preference Optimization -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/nlp-PO.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Preference Optimization</h3>
+                                <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
+                                <em>SFU Class Project, CMPT 713: Natural Language Processing</em></p>
+                                <a href="https://anoopsarkar.github.io/nlp-class/hw4.html">Project Page</a>
+                                <p>Implemented preference optimization using the ORPO framework to fine-tune the Qwen 2.5 0.5B-Instruct model for instruction-following tasks.</p>
+                            </div>
+                        </div>
 
-        <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
-        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a>Wenhe Wang</a></h1>
-        
-       
-          <img src="./assets/imgs/portrait.jpg" alt="Logo" />
-       
+                        <!-- Prompt Tuning for Text Generation -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/nlp-prefixtuning.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Prompt Tuning for Text Generation</h3>
+                                <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
+                                <em>SFU Class Project, CMPT 713: Natural Language Processing</em></p>
+                                <a href="https://anoopsarkar.github.io/nlp-class/hw3.html">Project Page</a>
+                                <p>Fine-tuned GPT2 using prompt tuning techniques to tackle table-to-text generation tasks.</p>
+                            </div>
+                        </div>
 
-        <p class="lab"><a href="https://www.linkedin.com/in/wenhe-wang/">>SFU MPCS in Visual Computing | Data Scientist at Cavallo Technologies</p>
-        <div class="rounded-social-buttons">
-          <a title="wenhewangcrane[at]gmail.com" class="social-button email" itemprop="email" href="mailto:wenhewangcrane@gmail.com" target="_blank"> <i class="far fa-envelope"></i></a>
-          <a title="" class="social-button github" href="https://github.com/Milkistasty" itemprop="sameAs" target="_blank"> <i class="fab fa-github"></i> </a>
-          <a title="" class="social-button linkedin" href="https://www.linkedin.com/in/wenhe-wang/" itemprop="sameAs" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-        </div>
-       
+                        <!-- BERT Finetuning for Robust Phrasal Chunking -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/nlp-bertchunking.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>BERT Finetuning for Robust Phrasal Chunking</h3>
+                                <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
+                                <em>SFU Class Project, CMPT 713: Natural Language Processing</em></p>
+                                <a href="https://anoopsarkar.github.io/nlp-class/hw2.html">Project Page</a>
+                                <p>Fine-tuned a BERT-based Transformer model to tackle phrasal chunking.</p>
+                            </div>
+                        </div>
 
- 
-      </header>
-      <section>
+                        <!-- Word Vectors and the Analogy Task -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/nlp-analogy.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Word Vectors and the Analogy Task</h3>
+                                <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
+                                <em>SFU Class Project, CMPT 713: Natural Language Processing</em></p>
+                                <a href="https://anoopsarkar.github.io/nlp-class/hw1.html">Project Page</a>
+                                <p>Optimized word vectors to solve analogy tasks, explored the use of retrofitting techniques to enhance the semantic relationships captured by pre-trained GloVe embeddings.</p>
+                            </div>
+                        </div>
 
-      <article>
-        
-        <p>Hi!</p>
+                        <!-- Segmentation into Words -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/nlp-ensegment.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Segmentation into Words</h3>
+                                <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
+                                <em>SFU Class Project, CMPT 713: Natural Language Processing</em></p>
+                                <a href="https://anoopsarkar.github.io/nlp-class/hw0.html">Project Page</a>
+                                <p>Automatically segment English input that does not have word boundaries into the most plausible sequence of words with N-gram.</p>
+                            </div>
+                        </div>
 
-        <p>I’m Wenhe Wang, a Data Scientist with a Master’s in Visual Computing from SFU. I specialize in computer vision, NLP, and cloud data solutions, and have experience developing models to optimize fraud detection, process image, enhance data pipelines, and automate text analysis.</p>
+                        <!-- 3D Reconstruction using Neural Fields -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-neuralfield.jpeg">
+                            </div>
+                            <div class="project-info">
+                                <h3>3D Reconstruction using Neural Fields (NeRF)</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 743: Practices in Visual Computing 2</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">Project Page</a>
+                                <p>Implemented a neural network for 3D object reconstruction from occupancy field samples, leveraging a 3D feature grid and a Multilayer Perceptron (MLP).</p>
+                            </div>
+                        </div>
 
-        <p>My work spans sectors from fintech, consulting to tech industry, including leading projects at Cavallo Technologies, TikTok, China Guangfa Bank, and KPMG.</p>
+                        <!-- Latent Manipulation with StyleGAN2 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-latentmanipulation.png">
+                            </div>
+                            <div class="project-info">
+                                <h3>Latent Manipulation with StyleGAN2</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 743: Practices in Visual Computing 2</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">Project Page</a>
+                                <p>Delved into various aspects of StyleGAN2, including basic image generation, latent space interpolation, and advanced manipulation techniques like latent mixing, showcasing the model's capability to blend and alter image features seamlessly.</p>
+                            </div>
+                        </div>
 
-        <p>I received my M.S. in Financial Engineering from University of Reading in 2019 and my B.Ec. in Financial Engineering from Nankai University in 2017.</p>
+                        <!-- Image to image translation with CycleGAN -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-cyclegan.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Image to image translation with CycleGAN</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 743: Practices in Visual Computing 2</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">Project Page</a>
+                                <p>Re-implemented CycleGAN from scratch to convert images from one domain (e.g., Apple emojis) to another (e.g., Windows emojis) without direct pairings, maintaining the intrinsic structure of the original images.</p>
+                            </div>
+                        </div>
 
-      </article>
-        
-      <hr />
+                        <!-- Pose Regression with PoseNet -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-posenet.png">
+                            </div>
+                            <div class="project-info">
+                                <h3>Pose Regression with PoseNet</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 743: Practices in Visual Computing 2</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">Project Page</a>
+                                <p>Re-implemented PoseNet with modified InceptionV1 architecture pre-trained on the Places dataset for estimating the camera's position and orientation and pose estimation from single images.</p>
+                            </div>
+                        </div>
 
-        
-      
-      <div class="container" id="projects"> 
-        <h2 id="header-2">Projects</h2>
+                        <!-- Object Detection with SSD -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-objectdetection.png">
+                            </div>
+                            <div class="project-info">
+                                <h3>Object Detection with SSD</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 743: Practices in Visual Computing 2</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">Project Page</a>
+                                <p>Re-implemented a simplified version of the Single Shot MultiBox Detector (SSD) for object detection, diverging from the conventional YOLO approach by incorporating multiple scales and default bounding boxes as anchors.</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://www.cs.sfu.ca/~kkyin/cmpt766/index.html"><img src="./assets/imgs/hologram.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Unity Cyberpunk Hologram and Teleport effects</h3>
-          <p><b>Wenhe Wang</b> and Gouttham Nambirajam<br>
-            CMPT 766: Computer Animation Final Project<br>
-            <a href="https://drive.google.com/file/d/1JZXf-9xNkrojzsw_pUExbjAIIx6uAZZ7/view?usp=sharing">Final Effect</a> || <a href="https://docs.google.com/presentation/d/1wmeqJLUH5gBu10zW9S1dUVnSXDkdheku/edit?usp=sharing&ouid=117583969342236003405&rtpof=true&sd=true">project page</a> </p>
-            <p>&nbsp;</p>
-        </div>
-        
-        <div class="entry-2" id="prev_img">
-          <a href="https://anoopsarkar.github.io/nlp-class/hw4.html"><img src="./assets/imgs/nlp-PO.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Preference Optimization</h3>
-          <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
-            CMPT 713: Natural Language Processing<br>
-          <a href="https://anoopsarkar.github.io/nlp-class/hw4.html">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- FPS VR Game with Unity -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-fps.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>FPS VR Game with Unity</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 742: Practices in Visual Computing 1</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">Project Page</a>
+                                <p>Developed a first-person shooter game using Unity, focusing on both player and enemy dynamics within a complex game environment.</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://anoopsarkar.github.io/nlp-class/hw3.html"><img src="./assets/imgs/nlp-prefixtuning.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Prompt Tuning for Text Generation</h3>
-          <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
-            CMPT 713: Natural Language Processing<br>
-          <a href="https://anoopsarkar.github.io/nlp-class/hw3.html">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
-        
-        <div class="entry-2" id="prev_img">
-          <a href="https://anoopsarkar.github.io/nlp-class/hw2.html"><img src="./assets/imgs/nlp-bertchunking.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">BERT Finetuning for Robust Phrasal Chunking</h3>
-          <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
-            CMPT 713: Natural Language Processing<br>
-          <a href="https://anoopsarkar.github.io/nlp-class/hw2.html">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- Epipolar geometry -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-epipolargeo.png">
+                            </div>
+                            <div class="project-info">
+                                <h3>Epipolar geometry</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 742: Practices in Visual Computing 1</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">Project Page</a>
+                                <p>Delved into the intricacies of epipolar geometry to unravel the structure of a 3D scene from two distinct image views. Implementing the normalized 8-point algorithm.</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://anoopsarkar.github.io/nlp-class/hw1.html"><img src="./assets/imgs/nlp-analogy.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Word Vectors and the Analogy Task</h3>
-          <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
-            CMPT 713: Natural Language Processing<br>
-          <a href="https://anoopsarkar.github.io/nlp-class/hw1.html">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- Image segmentation with UNet -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-unet.png">
+                            </div>
+                            <div class="project-info">
+                                <h3>Image segmentation with UNet</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 742: Practices in Visual Computing 1</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">Project Page</a>
+                                <p>Constructed the U-Net model from scratch in PyTorch, following its unique symmetric structure for detailed cell image segmentation.</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://anoopsarkar.github.io/nlp-class/hw0.html"><img src="./assets/imgs/nlp-ensegment.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Segmentation into Words</h3>
-          <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
-            CMPT 713: Natural Language Processing<br>
-          <a href="https://anoopsarkar.github.io/nlp-class/hw0.html">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- Poisson Blending -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-poissonblending.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Poisson Blending</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 742: Practices in Visual Computing 1</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">Project Page</a>
+                                <p>Reconstructed images from second-order derivatives and seamlessly blending image patches with Poisson blending.</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file"><img src="./assets/imgs/cv-neuralfield.jpeg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">3D Reconstruction using Neural Fields</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 743: Practices in visual computing 2<br>
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- Active Contours -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/cv-activecontours.png">
+                            </div>
+                            <div class="project-info">
+                                <h3>Active Contours</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>SFU Class Project, CMPT 742: Practices in Visual Computing 1</em></p>
+                                <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">Project Page</a>
+                                <p>Implemented traditional Active Contours (Snakes) model to delineate object boundaries through energy minimization, successfully applied to brain and teeth scans.</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file"><img src="./assets/imgs/cv-latentmanipulation.png" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Latent Manipulation with StyleGAN2</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 743: Practices in visual computing 2<br>
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- Containerized or Serverless Learning -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/serverless-serverful-deployment.jpg">
+                            </div>
+                            <div class="project-info">
+                                <h3>Containerized or Serverless Learning</h3>
+                                <p><b>Wenhe Wang</b>, Zareef Raiyan Safdar, Gouttham Nambirajam, Midhun Jisha Manoj, and Ashwin Abraham John<br>
+                                <em>SFU Class Final Project, CMPT 756: Distributed & Cloud Systems</em></p>
+                                <a href="https://github.com/Milkistasty/756-final-proj">Project Page</a>
+                                <p>Compared serverless and serverful (containerized) deployments of a PyTorch-based fall detection model using the Google Cloud Platform (GCP).</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file"><img src="./assets/imgs/cv-cyclegan.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Image to image translation with CycleGAN</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 743: Practices in visual computing 2<br>
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
-        
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file"><img src="./assets/imgs/cv-posenet.png" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Pose Regression with PoseNet</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 743: Practices in visual computing 2<br>
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
-        
-        
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file"><img src="./assets/imgs/cv-objectdetection.png" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Object Detection with SSD</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 743: Practices in visual computing 2<br>
-          <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2?tab=readme-ov-file">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- Option Pricing -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/imgs/optionpricing.png">
+                            </div>
+                            <div class="project-info">
+                                <h3>Option Pricing</h3>
+                                <p><b>Wenhe Wang</b><br>
+                                <em>UoR Class Final Project, ICM 286: Advanced Derivatives Modelling</em></p>
+                                <a href="https://github.com/Milkistasty/ICM286-Option-Pricing">Project Page</a>
+                                <p>Calculated portfolio value from models beyond Black-Scholes to price non-vanilla financial instruments with C++.</p>
+                            </div>
+                        </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1"><img src="./assets/imgs/cv-fps.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">FPS Game design with Unity</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 732: Practices in visual computing 1<br>
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                        <!-- Add more project cards here following the same structure -->
+                    </div>
+                </div>
+            </div>
+            </section>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1"><img src="./assets/imgs/cv-epipolargeo.png" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Epipolar geometry</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 732: Practices in visual computing 1<br>
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+            <section id="posters" class="section" data-section="postersNavItem">
+                <h2>Posters</h2>
+                <p>These are some posters of selected research projects.</p>
+                <div class="project-grid">
+                    <!-- StyleGAN3 Poster -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/cv-stylegan3.jpeg" alt="StyleGAN3">
+                        </div>
+                        <div class="project-info">
+                            <h3>This Cow Does Not Exist: Applying StyleGAN3 for Creating Realistic Cow Images</h3>
+                            <p><b>Wenhe Wang</b> and Hongchen Song<br>
+                            <em>SFU Class Final Project, CMPT 743: Practices in Visual Computing 2</em></p>
+                            <a href="./assets/imgs/cv-stylegan3.jpeg">Poster,</a>
+                            <a href="https://github.com/Milkistasty/This-Cow-Does-Not-Exist">Project Introduction,</a>
+                            <a href="https://milkistasty.github.io/This-Cow-Does-Not-Exist/index.html">Try it out,</a>
+                            <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2/tree/main/Final_Project">Code</a>
+                            <p>
+                                Retrained a StyleGAN3 model with real cow images to generate a realistic cow dataset.
+                            </p>
+                        </div>
+                    </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1"><img src="./assets/imgs/cv-unet.png" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Image segmentation with UNet</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 732: Practices in visual computing 1<br>
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                    <!-- LLaVa Poster -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/nlp-finalproject.png" alt="LLaVa Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Contrastive Approach in LLaVa</h3>
+                            <p>Gouttham Nambirajam, <b>Wenhe Wang</b>, and Raj Shreyas Penukonda<br>
+                            <em>SFU Class Final Project, CMPT 713: Natural Language Processing</em></p>
+                            <a href="./assets/imgs/nlp-finalproject.png">Poster,</a>
+                            <a href="https://github.com/Milkistasty/CMPT713-NLP/tree/main/project">Code</a>
+                            <p>
+                                Changed the architecture and finetuned the LLaVa 3.1 model with curated pairs of augmented images and prompts to classify two images.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Include other posters -->
+                </div>
+            </section>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1"><img src="./assets/imgs/cv-poissonblending.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Poisson Blending</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 732: Practices in visual computing 1<br>
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+            <section id="certificates" class="section" data-section="certificatesNavItem">
+                <h2>Certificates</h2>
+                <p>These are some proofs of my continuous learning, throughout my work for different employers.</p>
+                <div class="project-grid">
+                    <!-- GenAI Certificate -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/genai-cert.jpg" alt="GenAI Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3>Databricks Certified Generative AI Engineer Associate</h3>
+                            <a href="https://credentials.databricks.com/18902fb5-0c5e-46ca-8837-3b0dd4c42780#acc.M4BvEcYw">View Credential</a>
+                        </div>
+                    </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1"><img src="./assets/imgs/cv-activecontours.png" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Active Contours</h3>
-          <p><b>Wenhe Wang</b><br>
-            CMPT 732: Practices in visual computing 1<br>
-          <a href="https://github.com/Milkistasty/CMPT742-Visual-Computing-1">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                    <!-- ML Pro Certificate -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/mlpro-cert.jpg" alt="ML Pro Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3>Databricks Certified Machine Learning Professional</h3>
+                            <a href="https://credentials.databricks.com/d509ad1c-5ce7-4f12-8a3d-9b2f82fdceeb#gs.h7u2z5#acc.aWxX4jKq">View Credential</a>
+                        </div>
+                    </div>
+                    
+                    <!-- DE Pro Certificate -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/depro-cert.jpg" alt="DE Pro Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3>Databricks Certified Data Engineer Professional</h3>
+                            <a href="https://credentials.databricks.com/fe351015-3ebf-4840-8247-5ee760831951#acc.jGknm3fh">View Credential</a>
+                        </div>
+                    </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/756-final-proj"><img src="./assets/imgs/serverless-serverful-deployment.jpg" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Containerized or Serverless Learning</h3>
-          <p><b>Wenhe Wang</b>, Gouttham Nambirajan, Zareef Raiyan Safdar, Midhun Jisha Manoj, and Ashwin Abraham John<br>
-            CMPT 756: Distributed & Cloud Systems Final Project<br>
-          <a href="https://github.com/Milkistasty/756-final-proj">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+                    <!-- ML Asso Certificate -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/mlasso-cert.jpg" alt="ML Asso Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3>Databricks Certified Machine Learning Associate</h3>
+                            <a href="https://credentials.databricks.com/eb49f1d8-2875-4f78-99a9-07b3b002b467#gs.h7u5c1#acc.3iKfXSbz">View Credential</a>
+                        </div>
+                    </div>
 
-        <div class="entry-2" id="prev_img">
-          <a href="https://github.com/Milkistasty/ICM286-Option-Pricing"><img src="./assets/imgs/optionpricing.png" alt="Preview" ></a>
-        </div>
-        <div class="entry-3" id="prev_txt">
-          <h3 id="header-3">Option Pricing</h3>
-          <p><b>Wenhe Wang</b><br>
-            ICM 286: Advanced Derivatives Modelling Final Project<br>
-          <a href="https://github.com/Milkistasty/ICM286-Option-Pricing">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
-      </div>
+                    <!-- DE Asso Certificate -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/deasso-cert.jpg" alt="DE Asso Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3>Databricks Certified Data Engineer Associate</h3>
+                            <a href="https://credentials.databricks.com/579cc377-56d5-46f3-adee-790a168c11b3#acc.KbCSVHFU">View Credential</a>
+                        </div>
+                    </div>
 
-      <hr />
+                    <!-- LH Fund Certificate -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/imgs/lakehouse-fund-cert.jpg" alt="LH Fund Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3>Databricks Lakehouse Fundamentals</h3>
+                            <a href="https://credentials.databricks.com/7b1d2a82-c3d8-46c8-a16a-bc1b94482cf9#gs.h7u6tw#acc.lrmp09WH">View Credential</a>
+                        </div>
+                    </div>
 
-      <div class="container" id="posters"> 
-        <h2 id="header-2">Posters</h2>
+                    <!-- Continue with all other certificates -->
+                </div>
+            </section>
 
-        <div class="entry-2" id="prev_img">
-          <a href="./assets/imgs/cv-stylegan3.jpeg"><img src="./assets/imgs/cv-stylegan3.jpeg" alt="Preview"></a>
-        </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">This Cow Does Not Exist: Applying StyleGAN3 for Creating Realistic Cow Images</h3>
-          <p><b>Wenhe Wang</b> and Hongchen Song<br>
-            CMPT 743: Practices in visual computing 2 Final Project <br>
-          <a href="https://milkistasty.github.io/This-Cow-Does-Not-Exist/index.html">try it out here</a> || <a href="https://github.com/Milkistasty/CMPT743-Visual-Computing-2/tree/main/Final_Project">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
+            <section id="education" class="section" data-section="educationNavItem">
+                <h2>Education</h2>
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle" align="center">
+                  <img src="assets/imgs/sfu.png" alt="sfu" style="border-style: none" width="128" height="64">
+                </td>
+                <td width="75%" valign="middle">
+                  <h3>Simon Fraser University</h3>
+                  <strong>Master of Professional Computer Science in Visual Computing</strong>
+                  <br>
+                  <em>September 2023 to December 2024</em>
+                  <br>
+                  <p>
+                    <strong>Notable Coursework</strong> - Visual Computing Lab, Machine Learning, Distributed and Cloud Systems, Computer Vision, Natural Language Processing, Computer Animation.
+                  </p>
+                </td>
+            </tr>
 
-        <div class="entry-2" id="prev_img">
-          <a href="./assets/imgs/nlp-finalproject.png"><img src="./assets/imgs/nlp-finalproject.png" alt="Preview"></a>
-        </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">Contrastive Approach in LLaVa</h3>
-          <p><b>Wenhe Wang</b>, Gouttham Nambirajam, and Raj Shreyas Penukonda<br>
-            CMPT 713: Natural Language Processing Final Project <br>
-          <a href="https://github.com/Milkistasty/CMPT713-NLP/tree/main/project">project page</a> </p>
-          <p>&nbsp;</p>
-        </div>
-      </div>
-       
-      <hr />
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle" align="center">
+                  <img src="assets/imgs/uor.png" alt="uor" style="border-style: none" width="120" height="120">
+                </td>
+                <td width="75%" valign="middle">
+                  <h3>University of Reading</h3>
+                  <strong>Master of Science in Financial Engineering</strong>
+                  <br>
+                  <em>September 2018 to July 2019</em>
+                  <br>
+                  <p>
+                    <strong>Notable Coursework</strong> - Quantitative Methods for Finance, Securities, Futures and Options, Fixed Income and Equity Investments, Stochastic Calculus and Probability
+                    , C++ for Financial Engineering, Essentials of Financial Engineering, Derivatives Modelling, Numerical Methods for Financial Engineering, Derivative Securities: Pricing, Trading and Hedging, Advanced Derivatives Modelling.
+                  </p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle" align="center">
+                  <img src="assets/imgs/nankai.png" alt="uor" style="border-style: none" width="120" height="120">
+                </td>
+                <td width="75%" valign="middle">
+                  <h3>Nankai University</h3>
+                  <strong>Bachelor of Economics in Financial Engineering</strong>
+                  <br>
+                  <em>September 2013 to June 2017</em>
+                  <br>
+                  <p>
+                    <strong>Notable Coursework</strong> - C++ Fundamentals, Matlab for Finance, Econometrics, Linear Algebra, Advanced Mathematics, Statistics, Microeconomics, Macroeconomics.
+                  </p>
+                </td>
+            </tr>
 
-      <div class="container" id="certificates"> 
-        <h2 id="header-2">Certificates</h2>
-
-        <div class="entry-2" id="prev_img">
-          <img src="./assets/imgs/genai-cert.jpg" alt="Preview">
+        </tbody></table>
+            </section>
+        <footer class="footer">
+            &copy; <span id="current-year"></span> Wenhe Wang
+            <p><small>Hosted on GitHub Pages &mdash; Forked from Zareef Safdar <a href="https://safdarzareef.github.io/#about">safdarzareef.github.io</a></small></p>
+        </footer>
         </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">Databricks Certified Generative AI Engineer Associate</h3>
-          <a href="https://credentials.databricks.com/18902fb5-0c5e-46ca-8837-3b0dd4c42780#acc.M4BvEcYw">credential</a> </p>
-          <p>&nbsp;</p>
-        </div>
-
-        <div class="entry-2" id="prev_img">
-          <img src="./assets/imgs/mlpro-cert.jpg" alt="Preview">
-        </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">Databricks Certified Machine Learning Professional</h3>
-          <a href="https://credentials.databricks.com/d509ad1c-5ce7-4f12-8a3d-9b2f82fdceeb#gs.h7u2z5#acc.aWxX4jKq">credential</a> </p>
-          <p>&nbsp;</p>
-        </div>
-
-        <div class="entry-2" id="prev_img">
-          <img src="./assets/imgs/depro-cert.jpg" alt="Preview">
-        </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">Databricks Certified Data Engineer Professional</h3>
-          <a href="https://credentials.databricks.com/fe351015-3ebf-4840-8247-5ee760831951#acc.jGknm3fh">credential</a> </p>
-          <p>&nbsp;</p>
-        </div>
-
-        <div class="entry-2" id="prev_img">
-          <img src="./assets/imgs/mlasso-cert.jpg" alt="Preview">
-        </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">Databricks Certified Machine Learning Associate</h3>
-          <a href="https://credentials.databricks.com/eb49f1d8-2875-4f78-99a9-07b3b002b467#gs.h7u5c1#acc.3iKfXSbz">credential</a> </p>
-          <p>&nbsp;</p>
-        </div>
-
-        <div class="entry-2" id="prev_img">
-          <img src="./assets/imgs/deasso-cert.jpg" alt="Preview">
-        </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">Databricks Certified Data Engineer Associate</h3>
-          <a href="https://credentials.databricks.com/579cc377-56d5-46f3-adee-790a168c11b3#acc.KbCSVHFU">credential</a> </p>
-          <p>&nbsp;</p>
-        </div>
-
-        <div class="entry-2" id="prev_img">
-          <img src="./assets/imgs/lakehouse-fund-cert.jpg" alt="Preview">
-        </div>
-        <div class="entry-4" id="description">
-          <h3 id="header-4">Academy Accreditation - Databricks Lakehouse Fundamentals</h3>
-          <a href="https://credentials.databricks.com/7b1d2a82-c3d8-46c8-a16a-bc1b94482cf9#gs.h7u6tw#acc.lrmp09WH">credential</a> </p>
-          <p>&nbsp;</p>
-        </div>
-
-        
-      </div>
-
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
-    <script src="/assets/js/scale.fix.js" ></script>
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
 
-  </body>
+    <script>
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            toggleIcon.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+
+        // Navigation highlight functionality
+        const navLinks = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('.section');
+
+        function highlightNavOnScroll() {
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - sectionHeight/3)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavOnScroll);
+    </script>
+</body>
 </html>
