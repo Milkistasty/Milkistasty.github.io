@@ -265,6 +265,115 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Certificate category subsections */
+.cert-category {
+    --brand-color: var(--anthropic-orange);
+    margin-bottom: 36px;
+}
+
+.cert-category[data-brand="aws"]         { --brand-color: #FF9900; }
+.cert-category[data-brand="anthropic"]   { --brand-color: #d97757; }
+.cert-category[data-brand="databricks"]  { --brand-color: #FF3621; }
+.cert-category[data-brand="huggingface"] { --brand-color: #FFD21E; }
+.cert-category[data-brand="nlp"]         { --brand-color: #6a9bcc; }
+.cert-category[data-brand="cv"]          { --brand-color: #788c5d; }
+.cert-category[data-brand="asr"]         { --brand-color: #4a8a8a; }
+.cert-category[data-brand="finance"]     { --brand-color: #c9a227; }
+.cert-category[data-brand="cloud"]       { --brand-color: #7a8b99; }
+
+.cert-category-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-left: 4px solid var(--brand-color);
+    background: linear-gradient(90deg,
+        color-mix(in srgb, var(--brand-color) 12%, transparent) 0%,
+        transparent 60%);
+    border-radius: 0 8px 8px 0;
+}
+
+.cert-brand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: var(--brand-color);
+    color: #ffffff;
+    font-size: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px color-mix(in srgb, var(--brand-color) 35%, transparent);
+}
+
+/* HuggingFace's bright yellow needs dark text for contrast */
+.cert-category[data-brand="huggingface"] .cert-brand-icon {
+    color: var(--anthropic-dark);
+}
+
+.cert-brand-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.cert-brand-letter {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.cert-brand-emoji {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.cert-brand-name {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: var(--anthropic-dark);
+    flex-grow: 1;
+}
+
+.cert-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background-color: var(--brand-color);
+    color: #ffffff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.cert-category[data-brand="huggingface"] .cert-count {
+    color: var(--anthropic-dark);
+}
+
+.cert-category .project-grid {
+    margin-bottom: 0;
+}
+
+/* Dark mode for certificate categories */
+body.dark-mode .cert-category-header {
+    background: linear-gradient(90deg,
+        color-mix(in srgb, var(--brand-color) 18%, transparent) 0%,
+        transparent 60%);
+}
+
+body.dark-mode .cert-brand-name {
+    color: var(--anthropic-light);
+}
+
 /* Dark mode styles for project cards */
 body.dark-mode .project-card {
     background-color: #1f1e1c;
