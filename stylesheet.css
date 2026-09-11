@@ -220,6 +220,22 @@ a:hover {
     background-color: var(--anthropic-light-gray);
 }
 
+.project-video {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+    overflow: hidden;
+    background-color: var(--anthropic-dark);
+}
+
+.project-video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .project-image img {
     position: absolute;
     top: 0;
@@ -385,6 +401,10 @@ body.dark-mode .project-card:hover {
 }
 
 body.dark-mode .project-image {
+    background-color: #2a2927;
+}
+
+body.dark-mode .project-video {
     background-color: #2a2927;
 }
 
